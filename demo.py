@@ -1,4 +1,5 @@
 from sys import argv
+from datetime import datetime
 
 
 def main():
@@ -12,6 +13,8 @@ def main():
         return
     else:
        print('输入的信息是{}'.format(input_message))
+    
+    print("现在是：{}"。format(datetime))    
 
 
 
