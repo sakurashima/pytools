@@ -1,1 +1,4 @@
-print("这是很美好的一天\n")
+
+
+
+phrase_fr =  "Qulle jounée particulière"
