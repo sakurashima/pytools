@@ -1,5 +1,5 @@
-import random
-import time
+from random import randint
+from time import time
 from sys import argv
 
 
@@ -8,7 +8,7 @@ def random_num_list_generator(aug):
     num_list = list()
 
     for i in range(int(aug)):
-        num = random.randint(1, 100)
+        num = randint(1, 100)
         num_list.append(num)
 
     return num_list
@@ -16,7 +16,7 @@ def random_num_list_generator(aug):
 
 def main():
     
-    start_time = time.time()
+    start_time = time()
 
     # 随机生成一个包含十个随机数的列表
     try:
@@ -44,7 +44,7 @@ def main():
                 print('{}存在于生成的列表中，序号是{}'.format(num_list[i], i+1))
             else:
                 continue
-    over_time = time.time()
+    over_time = time()
 
     # print('时长：%d' % int(over_time))
     print(over_time-start_time)
