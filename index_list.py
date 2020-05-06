@@ -28,12 +28,12 @@ def main():
     for i in index_nums:
         index_list.append(int(i))
     # print(index_list)
-        
-    for i in index_list:
-        if i in num_list:
-            print('{}在列表中'.format(i))
+
+    for i in range(int(aug)):
+        if num_list[i] in index_list:
+            print('{}在生成的列表中，排序是{}'.format(num_list[i], i+1))
         else:
-            print('{}不在列表中'.format(i))
+            continue
 
 
 if __name__ == '__main__':
