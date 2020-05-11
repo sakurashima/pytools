@@ -2,7 +2,8 @@ from random import randint
 import pymysql
 
 
-def select_nom():
+def select(sql):
+
     # 打开数据库连接
     db = pymysql.connect(host="localhost",user="debian-sys-maint",password="mysql",database="random_name" )
     
@@ -10,7 +11,7 @@ def select_nom():
     cursor = db.cursor()
 
     # 使用execute()方法执行SQL语句
-    cursor.execute("SELECT * FROM NOM")
+    cursor.execute(sql)
 
     #使用fetall()获取全部数据
     data = cursor.fetchall()
@@ -18,22 +19,45 @@ def select_nom():
     #关闭游标和数据库的连接
     cursor.close()
     db.close()
-
+    
     return data
 
 
+def select_nom():
+
+    return select('select * from NOM')
+
+
 def select_prenom():
-    return '坤'
+    
+    return select('select * from PRENOM')
 
 
 def index_generator(i):
     if i == 1:
-        # 查询姓
-        data = select_nom()
-        print(data)
+        nom_list = list()
+        # 查询姓,查询的结果是一个大元组里面的小元祖
+        datas = select_nom()
+        for data in datas:
+            for i in data:
+                nom_list.append(i[0])
+
+        length_nom_list = len(nom_list)
+        random_num = randint(0, length_nom_list-1)
+        return nom_list[random_num]
+
     elif i == 2:
         # 查询名
-        return select_prenom()
+        nom_list = list()
+        datas = select_prenom()
+        for data in datas:
+            for i in data:
+                nom_list.append(i[0])
+
+        length_nom_list = len(nom_list)
+        random_num = randint(0, length_nom_list-1)
+        return nom_list[random_num]
+
         
 
 
