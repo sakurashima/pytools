@@ -34,6 +34,7 @@ def select_prenom():
 
 
 def index_generator(i):
+
     if i == 1:
         nom_list = list()
         # 查询姓,查询的结果是一个大元组里面的小元祖
@@ -57,8 +58,6 @@ def index_generator(i):
         length_nom_list = len(nom_list)
         random_num = randint(0, length_nom_list-1)
         return nom_list[random_num]
-
-        
 
 
 def main():
