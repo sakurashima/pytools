@@ -5,6 +5,7 @@ import re
 def get_one_page(url):
     """爬取单个网页"""
 
+
     headers = {
      'user-agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/53    7.36'
 }
