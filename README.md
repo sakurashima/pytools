@@ -1,7 +1,6 @@
 # pytools
 ## some very small and simple projects by python, do not laugh at me, that's enough!
 >The Zen of Python, by Tim Peters
-
 Beautiful is better than ugly.
 Explicit is better than implicit.
 Simple is better than complex.
