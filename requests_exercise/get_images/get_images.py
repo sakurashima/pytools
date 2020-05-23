@@ -8,3 +8,4 @@ with open('bilibili_logo.png', 'wb') as f:
     f.write(response.content)
 
 
+
