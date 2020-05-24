@@ -1,0 +1,1642 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8;"/>
+
+    <title>THEOL网络教学综合平台-安徽大学</title>
+    <link type="text/css" rel="stylesheet" href="/meol/homepage/V8/style/v8_blue/index.css" />
+    <script type="text/javascript" src="/meol/styles/newstyle/plugins/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="/meol/homepage/V8/style/v8_blue/js/index.js" ></script>
+</head>
+<body>
+
+<div class="wrap">
+    <div class="fix">
+        <div class="fix-left"></div>
+        <div class="fix-right">
+            <div class="fix-top"></div>
+            <div class="fix-bottom">
+
+            </div>
+        </div>
+    </div>
+    <div class="head">
+        <div class="wraper">
+            <div class="logo">
+                <div class="school_name"></div>
+                <div class="search-box">
+                    
+                    
+                    <form  action="./course.do" method="post"  >
+                        <input type="hidden"  name="deptId" value="0" >
+                        <input type="hidden"  name="s_keywordrealation" value="0" >
+                        <input type="text" placeholder="请输入课程名称或编号" name="s_keyword" id="topsearchtitle" class="search-content" value=""/>
+                        <input type="button" value="" class="button" onclick="checkTopSearch(this.form)" >
+                    </form>
+                </div>
+
+                <div class="register login_button">
+                    
+                        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <a href="javascript:void(0)" class="into" id="loginbtn">登录</a>
+
+                </div>
+                
+                    
+                    
+                        
+                
+                
+                 
+                    
+                    
+            </div>
+            <div class="nav">
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <ul>
+     
+           <li>
+                
+                    
+                    
+                        
+                            
+                            
+                        <a href="/meol/index.do?menuId=1"  >
+                        
+                        
+
+                    
+                
+               <span>主页</span></a>
+           </li>
+     
+           <li>
+                
+                    
+                    
+                        
+                            
+                            
+                        <a href="/meol/custom.do?menuId=2"  >
+                        
+                        
+
+                    
+                
+               <span>学习</span></a>
+           </li>
+     
+           <li>
+                
+                    
+                    
+                        
+                            
+                            
+                        <a href="/meol/custom.do?menuId=3"  >
+                        
+                        
+
+                    
+                
+               <span>活动</span></a>
+           </li>
+     
+           <li>
+                
+                    
+                    
+                        
+                            
+                            
+                        <a href="/meol/custom.do?menuId=4"  >
+                        
+                        
+
+                    
+                
+               <span>播客</span></a>
+           </li>
+     
+           <li>
+                
+                    
+                    
+                        
+                            
+                            
+                        <a href="/meol/custom.do?menuId=5"  >
+                        
+                        
+
+                    
+                
+               <span>精品课</span></a>
+           </li>
+     
+           <li>
+                
+                    
+                         <a href="http://jxpt.ahu.edu.cn/meol/respush/res/res_sso.jsp?resourceIndex=1" target='_blank' >
+                    
+                    
+                
+               <span>资源中心</span></a>
+           </li>
+     
+           <li>
+                
+                    
+                    
+                        
+                            
+                            
+                        <a href="/meol/courseunion/index.jsp?menuId=8"  target='_blank'>
+                        
+                        
+
+                    
+                
+               <span>课程联盟</span></a>
+           </li>
+     
+           <li>
+                
+                    
+                    
+                        
+                            
+                            
+                        <a href="social/socialIndex.do?menuId=9"  target='_blank'>
+                        
+                        
+
+                    
+                
+               <span>学习社区</span></a>
+           </li>
+     
+           <li>
+                
+                    
+                         <a href="http://jxpt.ahu.edu.cn/zlgc/index.do" target='_blank' >
+                    
+                    
+                
+               <span>本科教学工程</span></a>
+           </li>
+     
+    </ul>
+
+
+            </div>
+            <div class="login">
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="/meol/styles/newstyle/plugins/jquery.md5.js"></script>
+<script language="JavaScript" type="text/JavaScript">
+    function checkLogin(){
+        var name=document.getElementById("userName");
+        var pass=document.getElementById("passWord");
+        var formobj=document.getElementById("form1");
+        if(name.value == ""){
+            name.focus();
+            alert("用户名不能为空！");
+            return false;
+        }else if(pass.value == ""){
+            pass.focus();
+            alert("密码不能为空！");
+            return false;
+        }else{
+            
+            return true;
+        }
+
+    }
+
+</script>
+
+
+
+
+<div class="loginwrap" style="height: auto;">
+    
+
+    <div class="login-title">
+        <h4>用户登录</h4>
+        <p class="close"></p>
+    </div>
+
+    <form action="/meol/loginCheck.do" method="post" name="login" id="login" onSubmit="return checkLogin();">
+        
+        <input type="hidden" name="logintoken" value="1590290425323"/>
+        <div class="login-content">
+            <div class="label_user">
+                <div class="dl"></div>
+                <input type="text" name="IPT_LOGINUSERNAME" id="userName" tabindex="1" placeholder="请输入用户名" class="user"/>
+            </div>
+            <div class="label_pw">
+                <div class="ps"></div>
+                <input type="password" name="IPT_LOGINPASSWORD" id="passWord" tabindex="2" placeholder="请输入密码" class="password"></div>
+            
+            
+            
+            
+                
+                
+            
+            
+                
+                
+            
+        </div>
+
+        <div class="login-button" >
+            
+                <input type="submit" class="submit" value="登 录"/>
+            
+
+            
+        </div>
+        <div class="loginStaus">
+
+        
+
+        <div class="forgetPassword">
+        <div class="prompt">
+            <div class="forget"><a href="./lifelong/user/find_passwd_index.jsp" target="_blank">忘记密码?</a></div>
+        </div>
+        </div>
+        </div>
+
+    </form>
+    
+</div>
+
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(function(){
+            var lochref = window.location.href.split("?")[1];
+                  if(lochref != undefined && lochref != ""){
+                         $(".head .nav a").each(function(){
+                             var _href = $(this).attr("href");
+                             if(_href.indexOf("?") >0){
+                                 var thref = _href.split("?")[1];
+                                 if(thref==lochref){
+                                     $(this).parent("li").addClass('js-cur');
+                                 }
+                             }
+                         });
+                         }else{
+                             $(".head .nav li").eq(0).addClass("js-cur");
+                         }
+        })
+    </script>
+    <div class="contentwarp">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<HEAD>
+    <TITLE>错误！</TITLE>
+    <META http-equiv=Content-Type content="text/html; charset=gbk">
+    <link href="/meol/styles/main/css/error.css" rel="stylesheet" type="text/css">
+    <script language="JavaScript" type="text/JavaScript">
+        showdebug = false;
+        isguest=true;
+
+        function showhidedebug()
+        {
+            if (showdebug)
+            {
+                document.getElementById("debuginfo").style.display = "none";
+                showdebug = false;
+            }
+            else
+            {
+                document.getElementById("debuginfo").style.display = "";
+                showdebug = true;
+            }
+        }
+        function send()
+        {
+            if (isguest)
+            {
+                alert("只有注册用户才可以提交错误报告");
+                return false;
+            }
+            email = document.bugform.BUG_EMAIL.value;
+            if (email = window.prompt("请输入您的EMail地址", email))
+            {
+                if (email != "")
+                {
+                    document.bugform.BUG_CONTENT.value = document.getElementById("debuginfo").innerHTML;
+                    document.bugform.submit();
+                }
+            }
+        }
+        function openOnTop(url)
+        {
+            wnd = window;
+            count = 8;
+            while (wnd.name != "")
+            {
+                wnd = wnd.parent;
+                if (count-- <= 0)
+                    break;
+            }
+            wnd.location.href = url;
+        }
+
+        var smenu = null;
+        function clickm(aId) {
+            if (smenu == null) {
+                smenu = aId;
+                var mObj = document.getElementById(smenu);
+                mObj.className = "menu1";
+            } else {
+                if (smenu == aId) return;
+                var mObj = document.getElementById(smenu);
+                mObj.className = "menu";
+                mObj = aId;
+                mObj = document.getElementById(smenu);
+                mObj.className = "menu1";
+            }
+        }
+    </script>
+</HEAD>
+<BODY>
+<br/>
+<div id='TB_window'>
+    <div class="etop">
+        <div><a href='javascript:history.length==0?window.close():history.back()' id='TB_closeWindowButton'></a></div>
+    </div>
+    <div class="ebody">
+        <div class="etext">
+
+            你尚未登录系统或登录超时，请重新登录！！
+        </div>
+        
+    </div>
+    <div class="efoot"></div>
+</div>
+<div class="eneck"></div>
+
+
+<div id="debuginfo" style="display:none">
+    <TABLE cellSpacing=0 cellPadding=2 width="100%" border=0 id="table1">
+        <TBODY class=textA>
+        <TR>
+            <TD bgColor=#ffffff width="100">ServerAddr:
+
+            </TD>
+            <TD bgColor=#ffffff>http://jxpt.ahu.edu.cn/meol/
+            </TD>
+        </TR>
+        <TR>
+            <TD bgColor=#ffffff width="100">ClientAddr:
+
+            </TD>
+            <TD bgColor=#ffffff>
+                
+            </TD>
+        </TR>
+        <TR>
+            <TD bgColor=#ffffff width="100">ServerTitle:
+
+            </TD>
+            <TD bgColor=#ffffff>THEOL
+            </TD>
+        </TR>
+        <TR>
+            <TD bgColor=#ffffff width="100">Request URL:
+
+            </TD>
+            <TD bgColor=#ffffff>/meol/homepage/V8/clientPageTemplateNoSideimg.jsp
+            </TD>
+        </TR>
+        <TR>
+            <TD bgColor=#ffffff width="100">UserName:
+
+            </TD>
+            <TD bgColor=#ffffff>guest
+            </TD>
+        </TR>
+        <TR>
+            <TD bgColor=#ffffff width="100">Time:
+
+            </TD>
+            <TD bgColor=#ffffff>2020年5月24日 11:20:25
+            </TD>
+        </TR>
+        </TBODY>
+    </TABLE>
+    <br>
+    
+    <TABLE cellSpacing=0 cellPadding=2 width="100%" border=0 id="table1">
+        <TBODY class=textA>
+        
+
+        <TR>
+            <TD bgColor=#ffffff>org.apache.jsp.personal_005fv8_jsp
+            </TD>
+            <TD bgColor=#ffffff>personal_005fv8_jsp.java
+            </TD>
+            <TD bgColor=#ffffff>177
+            </TD>
+            <TD bgColor=#ffffff>_jspService
+            </TD>
+        </TR>
+        
+
+        <TR>
+            <TD bgColor=#ffffff>org.apache.jasper.runtime.HttpJspBase
+            </TD>
+            <TD bgColor=#ffffff>HttpJspBase.java
+            </TD>
+            <TD bgColor=#ffffff>98
+            </TD>
+            <TD bgColor=#ffffff>service
+            </TD>
+        </TR>
+        
+
+        <TR>
+            <TD bgColor=#ffffff>javax.servlet.http.HttpServlet
+            </TD>
+            <TD bgColor=#ffffff>HttpServlet.java
+            </TD>
+            <TD bgColor=#ffffff>729
+            </TD>
+            <TD bgColor=#ffffff>service
+            </TD>
+        </TR>
+        
+
+        <TR>
+            <TD bgColor=#ffffff>org.apache.jasper.servlet.JspServletWrapper
+            </TD>
+            <TD bgColor=#ffffff>JspServletWrapper.java
+            </TD>
+            <TD bgColor=#ffffff>371
+            </TD>
+            <TD bgColor=#ffffff>service
+            </TD>
+        </TR>
+        
+
+        <TR>
+            <TD bgColor=#ffffff>org.apache.jasper.servlet.JspServlet
+            </TD>
+            <TD bgColor=#ffffff>JspServlet.java
+            </TD>
+            <TD bgColor=#ffffff>308
+            </TD>
+            <TD bgColor=#ffffff>serviceJspFile
+            </TD>
+        </TR>
+        
+
+        <TR>
+            <TD bgColor=#ffffff>org.apache.jasper.servlet.JspServlet
+            </TD>
+            <TD bgColor=#ffffff>JspServlet.java
+            </TD>
+            <TD bgColor=#ffffff>259
+            </TD>
+            <TD bgColor=#ffffff>service
+            </TD>
+        </TR>
+        
+
+        <TR>
+            <TD bgColor=#ffffff>javax.servlet.http.HttpServlet
+            </TD>
+            <TD bgColor=#ffffff>HttpServlet.java
+            </TD>
+            <TD bgColor=#ffffff>729
+            </TD>
+            <TD bgColor=#ffffff>service
+            </TD>
+        </TR>
+        
+
+        <TR>
+            <TD bgColor=#ffffff>org.apache.catalina.core.ApplicationFilterChain
+            </TD>
+            <TD bgColor=#ffffff>ApplicationFilterChain.java
+            </TD>
+            <TD bgColor=#ffffff>269
+            </TD>
+            <TD bgColor=#ffffff>internalDoFilter
+            </TD>
+        </TR>
+        
+
+        <TR>
+            <TD bgColor=#ffffff>org.apache.catalina.core.ApplicationFilterChain
+            </TD>
+            <TD bgColor=#ffffff>ApplicationFilterChain.java
+            </TD>
+            <TD bgColor=#ffffff>188
+            </TD>
+            <TD bgColor=#ffffff>doFilter
+            </TD>
+        </TR>
+        
+
+        <TR>
+            <TD bgColor=#ffffff>org.apache.catalina.core.ApplicationDispatcher
+            </TD>
+            <TD bgColor=#ffffff>ApplicationDispatcher.java
+            </TD>
+            <TD bgColor=#ffffff>659
+            </TD>
+            <TD bgColor=#ffffff>invoke
+            </TD>
+        </TR>
+        
+
+        <TR>
+            <TD bgColor=#ffffff>org.apache.catalina.core.ApplicationDispatcher
+            </TD>
+            <TD bgColor=#ffffff>ApplicationDispatcher.java
+            </TD>
+            <TD bgColor=#ffffff>565
+            </TD>
+            <TD bgColor=#ffffff>doInclude
+            </TD>
+        </TR>
+        
+
+        <TR>
+            <TD bgColor=#ffffff>org.apache.catalina.core.ApplicationDispatcher
+            </TD>
+            <TD bgColor=#ffffff>ApplicationDispatcher.java
+            </TD>
+            <TD bgColor=#ffffff>493
+            </TD>
+            <TD bgColor=#ffffff>include
+            </TD>
+        </TR>
+        
+
+        <TR>
+            <TD bgColor=#ffffff>org.apache.jasper.runtime.JspRuntimeLibrary
+            </TD>
+            <TD bgColor=#ffffff>JspRuntimeLibrary.java
+            </TD>
+            <TD bgColor=#ffffff>965
+            </TD>
+            <TD bgColor=#ffffff>include
+            </TD>
+        </TR>
+        
+
+        <TR>
+            <TD bgColor=#ffffff>org.apache.jasper.runtime.PageContextImpl
+            </TD>
+            <TD bgColor=#ffffff>PageContextImpl.java
+            </TD>
+            <TD bgColor=#ffffff>600
+            </TD>
+            <TD bgColor=#ffffff>include
+            </TD>
+        </TR>
+        
+
+        <TR>
+            <TD bgColor=#ffffff>org.apache.struts.tiles.TilesUtilImpl
+            </TD>
+            <TD bgColor=#ffffff>TilesUtilImpl.java
+            </TD>
+            <TD bgColor=#ffffff>99
+            </TD>
+            <TD bgColor=#ffffff>doInclude
+            </TD>
+        </TR>
+        
+
+        <TR>
+            <TD bgColor=#ffffff>org.apache.struts.tiles.TilesUtil
+            </TD>
+            <TD bgColor=#ffffff>TilesUtil.java
+            </TD>
+            <TD bgColor=#ffffff>135
+            </TD>
+            <TD bgColor=#ffffff>doInclude
+            </TD>
+        </TR>
+        
+
+        <TR>
+            <TD bgColor=#ffffff>org.apache.struts.taglib.tiles.InsertTag
+            </TD>
+            <TD bgColor=#ffffff>InsertTag.java
+            </TD>
+            <TD bgColor=#ffffff>760
+            </TD>
+            <TD bgColor=#ffffff>doInclude
+            </TD>
+        </TR>
+        
+
+        <TR>
+            <TD bgColor=#ffffff>org.apache.struts.taglib.tiles.InsertTag$InsertHandler
+            </TD>
+            <TD bgColor=#ffffff>InsertTag.java
+            </TD>
+            <TD bgColor=#ffffff>892
+            </TD>
+            <TD bgColor=#ffffff>doEndTag
+            </TD>
+        </TR>
+        
+
+        <TR>
+            <TD bgColor=#ffffff>org.apache.struts.taglib.tiles.InsertTag
+            </TD>
+            <TD bgColor=#ffffff>InsertTag.java
+            </TD>
+            <TD bgColor=#ffffff>462
+            </TD>
+            <TD bgColor=#ffffff>doEndTag
+            </TD>
+        </TR>
+        
+
+        <TR>
+            <TD bgColor=#ffffff>org.apache.jsp.homepage.V8.layouts.newBlue.clientPageTemplateNoSideimg_jsp
+            </TD>
+            <TD bgColor=#ffffff>clientPageTemplateNoSideimg_jsp.java
+            </TD>
+            <TD bgColor=#ffffff>452
+            </TD>
+            <TD bgColor=#ffffff>_jspx_meth_tiles_005finsert_005f3
+            </TD>
+        </TR>
+        
+
+        <TR>
+            <TD bgColor=#ffffff>org.apache.jsp.homepage.V8.layouts.newBlue.clientPageTemplateNoSideimg_jsp
+            </TD>
+            <TD bgColor=#ffffff>clientPageTemplateNoSideimg_jsp.java
+            </TD>
+            <TD bgColor=#ffffff>260
+            </TD>
+            <TD bgColor=#ffffff>_jspService
+            </TD>
+        </TR>
+        
+
+        <TR>
+            <TD bgColor=#ffffff>org.apache.jasper.runtime.HttpJspBase
+            </TD>
+            <TD bgColor=#ffffff>HttpJspBase.java
+            </TD>
+            <TD bgColor=#ffffff>98
+            </TD>
+            <TD bgColor=#ffffff>service
+            </TD>
+        </TR>
+        
+
+        <TR>
+            <TD bgColor=#ffffff>javax.servlet.http.HttpServlet
+            </TD>
+            <TD bgColor=#ffffff>HttpServlet.java
+            </TD>
+            <TD bgColor=#ffffff>729
+            </TD>
+            <TD bgColor=#ffffff>service
+            </TD>
+        </TR>
+        
+
+        <TR>
+            <TD bgColor=#ffffff>org.apache.jasper.servlet.JspServletWrapper
+            </TD>
+            <TD bgColor=#ffffff>JspServletWrapper.java
+            </TD>
+            <TD bgColor=#ffffff>371
+            </TD>
+            <TD bgColor=#ffffff>service
+            </TD>
+        </TR>
+        
+
+        <TR>
+            <TD bgColor=#ffffff>org.apache.jasper.servlet.JspServlet
+            </TD>
+            <TD bgColor=#ffffff>JspServlet.java
+            </TD>
+            <TD bgColor=#ffffff>308
+            </TD>
+            <TD bgColor=#ffffff>serviceJspFile
+            </TD>
+        </TR>
+        
+
+        <TR>
+            <TD bgColor=#ffffff>org.apache.jasper.servlet.JspServlet
+            </TD>
+            <TD bgColor=#ffffff>JspServlet.java
+            </TD>
+            <TD bgColor=#ffffff>259
+            </TD>
+            <TD bgColor=#ffffff>service
+            </TD>
+        </TR>
+        
+
+        <TR>
+            <TD bgColor=#ffffff>javax.servlet.http.HttpServlet
+            </TD>
+            <TD bgColor=#ffffff>HttpServlet.java
+            </TD>
+            <TD bgColor=#ffffff>729
+            </TD>
+            <TD bgColor=#ffffff>service
+            </TD>
+        </TR>
+        
+
+        <TR>
+            <TD bgColor=#ffffff>org.apache.catalina.core.ApplicationFilterChain
+            </TD>
+            <TD bgColor=#ffffff>ApplicationFilterChain.java
+            </TD>
+            <TD bgColor=#ffffff>269
+            </TD>
+            <TD bgColor=#ffffff>internalDoFilter
+            </TD>
+        </TR>
+        
+
+        <TR>
+            <TD bgColor=#ffffff>org.apache.catalina.core.ApplicationFilterChain
+            </TD>
+            <TD bgColor=#ffffff>ApplicationFilterChain.java
+            </TD>
+            <TD bgColor=#ffffff>188
+            </TD>
+            <TD bgColor=#ffffff>doFilter
+            </TD>
+        </TR>
+        
+
+        <TR>
+            <TD bgColor=#ffffff>org.apache.catalina.core.ApplicationDispatcher
+            </TD>
+            <TD bgColor=#ffffff>ApplicationDispatcher.java
+            </TD>
+            <TD bgColor=#ffffff>659
+            </TD>
+            <TD bgColor=#ffffff>invoke
+            </TD>
+        </TR>
+        
+
+        <TR>
+            <TD bgColor=#ffffff>org.apache.catalina.core.ApplicationDispatcher
+            </TD>
+            <TD bgColor=#ffffff>ApplicationDispatcher.java
+            </TD>
+            <TD bgColor=#ffffff>565
+            </TD>
+            <TD bgColor=#ffffff>doInclude
+            </TD>
+        </TR>
+        
+
+        <TR>
+            <TD bgColor=#ffffff>org.apache.catalina.core.ApplicationDispatcher
+            </TD>
+            <TD bgColor=#ffffff>ApplicationDispatcher.java
+            </TD>
+            <TD bgColor=#ffffff>493
+            </TD>
+            <TD bgColor=#ffffff>include
+            </TD>
+        </TR>
+        
+
+        <TR>
+            <TD bgColor=#ffffff>org.apache.jasper.runtime.JspRuntimeLibrary
+            </TD>
+            <TD bgColor=#ffffff>JspRuntimeLibrary.java
+            </TD>
+            <TD bgColor=#ffffff>965
+            </TD>
+            <TD bgColor=#ffffff>include
+            </TD>
+        </TR>
+        
+
+        <TR>
+            <TD bgColor=#ffffff>org.apache.jsp.homepage.V8.clientPageTemplateNoSideimg_jsp
+            </TD>
+            <TD bgColor=#ffffff>clientPageTemplateNoSideimg_jsp.java
+            </TD>
+            <TD bgColor=#ffffff>144
+            </TD>
+            <TD bgColor=#ffffff>_jspService
+            </TD>
+        </TR>
+        
+
+        <TR>
+            <TD bgColor=#ffffff>org.apache.jasper.runtime.HttpJspBase
+            </TD>
+            <TD bgColor=#ffffff>HttpJspBase.java
+            </TD>
+            <TD bgColor=#ffffff>98
+            </TD>
+            <TD bgColor=#ffffff>service
+            </TD>
+        </TR>
+        
+
+        <TR>
+            <TD bgColor=#ffffff>javax.servlet.http.HttpServlet
+            </TD>
+            <TD bgColor=#ffffff>HttpServlet.java
+            </TD>
+            <TD bgColor=#ffffff>729
+            </TD>
+            <TD bgColor=#ffffff>service
+            </TD>
+        </TR>
+        
+
+        <TR>
+            <TD bgColor=#ffffff>org.apache.jasper.servlet.JspServletWrapper
+            </TD>
+            <TD bgColor=#ffffff>JspServletWrapper.java
+            </TD>
+            <TD bgColor=#ffffff>371
+            </TD>
+            <TD bgColor=#ffffff>service
+            </TD>
+        </TR>
+        
+
+        <TR>
+            <TD bgColor=#ffffff>org.apache.jasper.servlet.JspServlet
+            </TD>
+            <TD bgColor=#ffffff>JspServlet.java
+            </TD>
+            <TD bgColor=#ffffff>308
+            </TD>
+            <TD bgColor=#ffffff>serviceJspFile
+            </TD>
+        </TR>
+        
+
+        <TR>
+            <TD bgColor=#ffffff>org.apache.jasper.servlet.JspServlet
+            </TD>
+            <TD bgColor=#ffffff>JspServlet.java
+            </TD>
+            <TD bgColor=#ffffff>259
+            </TD>
+            <TD bgColor=#ffffff>service
+            </TD>
+        </TR>
+        
+
+        <TR>
+            <TD bgColor=#ffffff>javax.servlet.http.HttpServlet
+            </TD>
+            <TD bgColor=#ffffff>HttpServlet.java
+            </TD>
+            <TD bgColor=#ffffff>729
+            </TD>
+            <TD bgColor=#ffffff>service
+            </TD>
+        </TR>
+        
+
+        <TR>
+            <TD bgColor=#ffffff>org.apache.catalina.core.ApplicationFilterChain
+            </TD>
+            <TD bgColor=#ffffff>ApplicationFilterChain.java
+            </TD>
+            <TD bgColor=#ffffff>269
+            </TD>
+            <TD bgColor=#ffffff>internalDoFilter
+            </TD>
+        </TR>
+        
+
+        <TR>
+            <TD bgColor=#ffffff>org.apache.catalina.core.ApplicationFilterChain
+            </TD>
+            <TD bgColor=#ffffff>ApplicationFilterChain.java
+            </TD>
+            <TD bgColor=#ffffff>188
+            </TD>
+            <TD bgColor=#ffffff>doFilter
+            </TD>
+        </TR>
+        
+
+        <TR>
+            <TD bgColor=#ffffff>org.apache.catalina.core.ApplicationDispatcher
+            </TD>
+            <TD bgColor=#ffffff>ApplicationDispatcher.java
+            </TD>
+            <TD bgColor=#ffffff>659
+            </TD>
+            <TD bgColor=#ffffff>invoke
+            </TD>
+        </TR>
+        
+
+        <TR>
+            <TD bgColor=#ffffff>org.apache.catalina.core.ApplicationDispatcher
+            </TD>
+            <TD bgColor=#ffffff>ApplicationDispatcher.java
+            </TD>
+            <TD bgColor=#ffffff>457
+            </TD>
+            <TD bgColor=#ffffff>processRequest
+            </TD>
+        </TR>
+        
+
+        <TR>
+            <TD bgColor=#ffffff>org.apache.catalina.core.ApplicationDispatcher
+            </TD>
+            <TD bgColor=#ffffff>ApplicationDispatcher.java
+            </TD>
+            <TD bgColor=#ffffff>395
+            </TD>
+            <TD bgColor=#ffffff>doForward
+            </TD>
+        </TR>
+        
+
+        <TR>
+            <TD bgColor=#ffffff>org.apache.catalina.core.ApplicationDispatcher
+            </TD>
+            <TD bgColor=#ffffff>ApplicationDispatcher.java
+            </TD>
+            <TD bgColor=#ffffff>311
+            </TD>
+            <TD bgColor=#ffffff>forward
+            </TD>
+        </TR>
+        
+
+        <TR>
+            <TD bgColor=#ffffff>org.apache.struts.action.RequestProcessor
+            </TD>
+            <TD bgColor=#ffffff>RequestProcessor.java
+            </TD>
+            <TD bgColor=#ffffff>1085
+            </TD>
+            <TD bgColor=#ffffff>doForward
+            </TD>
+        </TR>
+        
+
+        <TR>
+            <TD bgColor=#ffffff>org.apache.struts.tiles.TilesRequestProcessor
+            </TD>
+            <TD bgColor=#ffffff>TilesRequestProcessor.java
+            </TD>
+            <TD bgColor=#ffffff>263
+            </TD>
+            <TD bgColor=#ffffff>doForward
+            </TD>
+        </TR>
+        
+
+        <TR>
+            <TD bgColor=#ffffff>org.apache.struts.tiles.TilesRequestProcessor
+            </TD>
+            <TD bgColor=#ffffff>TilesRequestProcessor.java
+            </TD>
+            <TD bgColor=#ffffff>239
+            </TD>
+            <TD bgColor=#ffffff>processTilesDefinition
+            </TD>
+        </TR>
+        
+
+        <TR>
+            <TD bgColor=#ffffff>org.apache.struts.tiles.TilesRequestProcessor
+            </TD>
+            <TD bgColor=#ffffff>TilesRequestProcessor.java
+            </TD>
+            <TD bgColor=#ffffff>302
+            </TD>
+            <TD bgColor=#ffffff>processForwardConfig
+            </TD>
+        </TR>
+        
+
+        <TR>
+            <TD bgColor=#ffffff>org.apache.struts.action.RequestProcessor
+            </TD>
+            <TD bgColor=#ffffff>RequestProcessor.java
+            </TD>
+            <TD bgColor=#ffffff>241
+            </TD>
+            <TD bgColor=#ffffff>process
+            </TD>
+        </TR>
+        
+
+        <TR>
+            <TD bgColor=#ffffff>org.apache.struts.action.ActionServlet
+            </TD>
+            <TD bgColor=#ffffff>ActionServlet.java
+            </TD>
+            <TD bgColor=#ffffff>1196
+            </TD>
+            <TD bgColor=#ffffff>process
+            </TD>
+        </TR>
+        
+
+        <TR>
+            <TD bgColor=#ffffff>org.apache.struts.action.ActionServlet
+            </TD>
+            <TD bgColor=#ffffff>ActionServlet.java
+            </TD>
+            <TD bgColor=#ffffff>414
+            </TD>
+            <TD bgColor=#ffffff>doGet
+            </TD>
+        </TR>
+        
+
+        <TR>
+            <TD bgColor=#ffffff>javax.servlet.http.HttpServlet
+            </TD>
+            <TD bgColor=#ffffff>HttpServlet.java
+            </TD>
+            <TD bgColor=#ffffff>627
+            </TD>
+            <TD bgColor=#ffffff>service
+            </TD>
+        </TR>
+        
+
+        <TR>
+            <TD bgColor=#ffffff>javax.servlet.http.HttpServlet
+            </TD>
+            <TD bgColor=#ffffff>HttpServlet.java
+            </TD>
+            <TD bgColor=#ffffff>729
+            </TD>
+            <TD bgColor=#ffffff>service
+            </TD>
+        </TR>
+        
+
+        <TR>
+            <TD bgColor=#ffffff>org.apache.catalina.core.ApplicationFilterChain
+            </TD>
+            <TD bgColor=#ffffff>ApplicationFilterChain.java
+            </TD>
+            <TD bgColor=#ffffff>269
+            </TD>
+            <TD bgColor=#ffffff>internalDoFilter
+            </TD>
+        </TR>
+        
+
+        <TR>
+            <TD bgColor=#ffffff>org.apache.catalina.core.ApplicationFilterChain
+            </TD>
+            <TD bgColor=#ffffff>ApplicationFilterChain.java
+            </TD>
+            <TD bgColor=#ffffff>188
+            </TD>
+            <TD bgColor=#ffffff>doFilter
+            </TD>
+        </TR>
+        
+
+        <TR>
+            <TD bgColor=#ffffff>org.springframework.orm.hibernate3.support.OpenSessionInViewFilter
+            </TD>
+            <TD bgColor=#ffffff>OpenSessionInViewFilter.java
+            </TD>
+            <TD bgColor=#ffffff>198
+            </TD>
+            <TD bgColor=#ffffff>doFilterInternal
+            </TD>
+        </TR>
+        
+
+        <TR>
+            <TD bgColor=#ffffff>org.springframework.web.filter.OncePerRequestFilter
+            </TD>
+            <TD bgColor=#ffffff>OncePerRequestFilter.java
+            </TD>
+            <TD bgColor=#ffffff>76
+            </TD>
+            <TD bgColor=#ffffff>doFilter
+            </TD>
+        </TR>
+        
+
+        <TR>
+            <TD bgColor=#ffffff>org.apache.catalina.core.ApplicationFilterChain
+            </TD>
+            <TD bgColor=#ffffff>ApplicationFilterChain.java
+            </TD>
+            <TD bgColor=#ffffff>215
+            </TD>
+            <TD bgColor=#ffffff>internalDoFilter
+            </TD>
+        </TR>
+        
+
+        <TR>
+            <TD bgColor=#ffffff>org.apache.catalina.core.ApplicationFilterChain
+            </TD>
+            <TD bgColor=#ffffff>ApplicationFilterChain.java
+            </TD>
+            <TD bgColor=#ffffff>188
+            </TD>
+            <TD bgColor=#ffffff>doFilter
+            </TD>
+        </TR>
+        
+
+        <TR>
+            <TD bgColor=#ffffff>net.theol.webutils.filter.SetCharacterEncodingFilter
+            </TD>
+            <TD bgColor=#ffffff>SetCharacterEncodingFilter.java
+            </TD>
+            <TD bgColor=#ffffff>116
+            </TD>
+            <TD bgColor=#ffffff>doFilter
+            </TD>
+        </TR>
+        
+
+        <TR>
+            <TD bgColor=#ffffff>org.apache.catalina.core.ApplicationFilterChain
+            </TD>
+            <TD bgColor=#ffffff>ApplicationFilterChain.java
+            </TD>
+            <TD bgColor=#ffffff>215
+            </TD>
+            <TD bgColor=#ffffff>internalDoFilter
+            </TD>
+        </TR>
+        
+
+        <TR>
+            <TD bgColor=#ffffff>org.apache.catalina.core.ApplicationFilterChain
+            </TD>
+            <TD bgColor=#ffffff>ApplicationFilterChain.java
+            </TD>
+            <TD bgColor=#ffffff>188
+            </TD>
+            <TD bgColor=#ffffff>doFilter
+            </TD>
+        </TR>
+        
+
+        <TR>
+            <TD bgColor=#ffffff>net.theol.webutils.filter.ZyPreFilter
+            </TD>
+            <TD bgColor=#ffffff>ZyPreFilter.java
+            </TD>
+            <TD bgColor=#ffffff>244
+            </TD>
+            <TD bgColor=#ffffff>doFilter
+            </TD>
+        </TR>
+        
+
+        <TR>
+            <TD bgColor=#ffffff>org.apache.catalina.core.ApplicationFilterChain
+            </TD>
+            <TD bgColor=#ffffff>ApplicationFilterChain.java
+            </TD>
+            <TD bgColor=#ffffff>215
+            </TD>
+            <TD bgColor=#ffffff>internalDoFilter
+            </TD>
+        </TR>
+        
+
+        <TR>
+            <TD bgColor=#ffffff>org.apache.catalina.core.ApplicationFilterChain
+            </TD>
+            <TD bgColor=#ffffff>ApplicationFilterChain.java
+            </TD>
+            <TD bgColor=#ffffff>188
+            </TD>
+            <TD bgColor=#ffffff>doFilter
+            </TD>
+        </TR>
+        
+
+        <TR>
+            <TD bgColor=#ffffff>org.apache.catalina.core.StandardWrapperValve
+            </TD>
+            <TD bgColor=#ffffff>StandardWrapperValve.java
+            </TD>
+            <TD bgColor=#ffffff>213
+            </TD>
+            <TD bgColor=#ffffff>invoke
+            </TD>
+        </TR>
+        
+
+        <TR>
+            <TD bgColor=#ffffff>org.apache.catalina.core.StandardContextValve
+            </TD>
+            <TD bgColor=#ffffff>StandardContextValve.java
+            </TD>
+            <TD bgColor=#ffffff>172
+            </TD>
+            <TD bgColor=#ffffff>invoke
+            </TD>
+        </TR>
+        
+
+        <TR>
+            <TD bgColor=#ffffff>org.apache.catalina.authenticator.AuthenticatorBase
+            </TD>
+            <TD bgColor=#ffffff>AuthenticatorBase.java
+            </TD>
+            <TD bgColor=#ffffff>470
+            </TD>
+            <TD bgColor=#ffffff>invoke
+            </TD>
+        </TR>
+        
+
+        <TR>
+            <TD bgColor=#ffffff>org.apache.catalina.valves.AccessLogValve
+            </TD>
+            <TD bgColor=#ffffff>AccessLogValve.java
+            </TD>
+            <TD bgColor=#ffffff>581
+            </TD>
+            <TD bgColor=#ffffff>invoke
+            </TD>
+        </TR>
+        
+
+        <TR>
+            <TD bgColor=#ffffff>org.apache.catalina.core.StandardHostValve
+            </TD>
+            <TD bgColor=#ffffff>StandardHostValve.java
+            </TD>
+            <TD bgColor=#ffffff>127
+            </TD>
+            <TD bgColor=#ffffff>invoke
+            </TD>
+        </TR>
+        
+
+        <TR>
+            <TD bgColor=#ffffff>org.apache.catalina.valves.ErrorReportValve
+            </TD>
+            <TD bgColor=#ffffff>ErrorReportValve.java
+            </TD>
+            <TD bgColor=#ffffff>117
+            </TD>
+            <TD bgColor=#ffffff>invoke
+            </TD>
+        </TR>
+        
+
+        <TR>
+            <TD bgColor=#ffffff>org.apache.catalina.core.StandardEngineValve
+            </TD>
+            <TD bgColor=#ffffff>StandardEngineValve.java
+            </TD>
+            <TD bgColor=#ffffff>108
+            </TD>
+            <TD bgColor=#ffffff>invoke
+            </TD>
+        </TR>
+        
+
+        <TR>
+            <TD bgColor=#ffffff>org.apache.catalina.connector.CoyoteAdapter
+            </TD>
+            <TD bgColor=#ffffff>CoyoteAdapter.java
+            </TD>
+            <TD bgColor=#ffffff>174
+            </TD>
+            <TD bgColor=#ffffff>service
+            </TD>
+        </TR>
+        
+
+        <TR>
+            <TD bgColor=#ffffff>org.apache.jk.server.JkCoyoteHandler
+            </TD>
+            <TD bgColor=#ffffff>JkCoyoteHandler.java
+            </TD>
+            <TD bgColor=#ffffff>200
+            </TD>
+            <TD bgColor=#ffffff>invoke
+            </TD>
+        </TR>
+        
+
+        <TR>
+            <TD bgColor=#ffffff>org.apache.jk.common.HandlerRequest
+            </TD>
+            <TD bgColor=#ffffff>HandlerRequest.java
+            </TD>
+            <TD bgColor=#ffffff>291
+            </TD>
+            <TD bgColor=#ffffff>invoke
+            </TD>
+        </TR>
+        
+
+        <TR>
+            <TD bgColor=#ffffff>org.apache.jk.common.ChannelSocket
+            </TD>
+            <TD bgColor=#ffffff>ChannelSocket.java
+            </TD>
+            <TD bgColor=#ffffff>775
+            </TD>
+            <TD bgColor=#ffffff>invoke
+            </TD>
+        </TR>
+        
+
+        <TR>
+            <TD bgColor=#ffffff>org.apache.jk.common.ChannelSocket
+            </TD>
+            <TD bgColor=#ffffff>ChannelSocket.java
+            </TD>
+            <TD bgColor=#ffffff>704
+            </TD>
+            <TD bgColor=#ffffff>processConnection
+            </TD>
+        </TR>
+        
+
+        <TR>
+            <TD bgColor=#ffffff>org.apache.jk.common.ChannelSocket$SocketConnection
+            </TD>
+            <TD bgColor=#ffffff>ChannelSocket.java
+            </TD>
+            <TD bgColor=#ffffff>897
+            </TD>
+            <TD bgColor=#ffffff>runIt
+            </TD>
+        </TR>
+        
+
+        <TR>
+            <TD bgColor=#ffffff>org.apache.tomcat.util.threads.ThreadPool$ControlRunnable
+            </TD>
+            <TD bgColor=#ffffff>ThreadPool.java
+            </TD>
+            <TD bgColor=#ffffff>689
+            </TD>
+            <TD bgColor=#ffffff>run
+            </TD>
+        </TR>
+        
+
+        <TR>
+            <TD bgColor=#ffffff>java.lang.Thread
+            </TD>
+            <TD bgColor=#ffffff>Thread.java
+            </TD>
+            <TD bgColor=#ffffff>662
+            </TD>
+            <TD bgColor=#ffffff>run
+            </TD>
+        </TR>
+        
+        </TBODY>
+    </TABLE>
+    
+</div>
+
+
+<form name="bugform" action="/meol/popups/bugreport_do.jsp" method="post" target="_blank">
+    <input type="hidden" name="BUG_SUBJECT" value="Bug Report">
+    <input type="hidden" name="BUG_HTMLFORMAT" value="1">
+    <input type="hidden" name="BUG_CONTENT" value="">
+    <input type="hidden" name="BUG_EMAIL" value="">
+</form>
+</BODY>
+</HTML>
+    </div>
+</div>
+    <div class="foot">
+        <div class="wraper">
+            <div class="copyright">
+                <ul>
+                    <li>
+                        <a>
+                            
+                            <span class="explain">总访问量：33907390</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            
+                            <span class="explain">总课程数：17096</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <span class="explain">在线人数：149</span>
+                        </a>
+                    </li>
+                </ul>
+                <p><a href=http://www.ahu.edu.cn target=_blank> 安徽大学</a> 版权所有 2017 <a href=http://www.umooc.com.cn target=_blank> 优慕课在线教育科技（北京）有限责任公司</a> 技术支持（请使用1280*1024分辨率，IE8或更高版本浏览器访问本系统）</p>
+            </div>
+        </div>
+    </div>
+
+<script type="text/javascript">
+    $(function(){
+        setViewHeight(".contentwarp",".head",".sideimg",".foot");
+    });
+</script>
+</body>
+</html>
+
+
