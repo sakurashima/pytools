@@ -1,0 +1,1453 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>THEOL网络教学综合平台-安徽大学</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8;"/>
+
+    <meta http-equiv=“X-UA-Compatible” content=“chrome=1″ />
+    <link type="text/css" rel="stylesheet" href="/meol/homepage/V8/style/v8_blue/newIndex.css" />
+    <script type="text/javascript" src="/meol/styles/newstyle/plugins/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="/meol/homepage/V8/style/v8_blue/js/index.js" ></script>
+</head>
+<body>
+
+<div class="wrap">
+
+    <div class="head">
+        <div class="wraper">
+            <div class="logo">
+                <div class="fix">
+                    <div class="fix-left"></div>
+                    <div class="fix-right">
+                        <div class="fix-top"></div>
+                        <div class="fix-bottom">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="school_name"></div>
+                <div class="search-box">
+                    
+                    
+                    <form  action="./course.do" method="post"  >
+                        <input type="hidden"  name="deptId" value="0" >
+                        <input type="hidden"  name="s_keywordrealation" value="0" >
+                        <input type="text" name="s_keyword"  id="topsearchtitle" class="search-content" placeholder="请输入课程名称或编号"  />
+                        <input type="button" value="" class="button prompt" onclick="checkTopSearch(this.form)" >
+                        
+                    </form>
+                </div>
+                <div class="register login_button">
+
+    <a href="javascript:void(0)" class="into" id="loginbtn">登录</a>
+
+                </div>
+                <div class="appDownload"></div>
+            </div>
+            <div class="nav navigaTion" id="nav">
+
+
+
+    <ul>
+     
+           <li>
+                
+                    
+                    
+                        
+                            
+                            
+                        <a href="/meol/index.do?menuId=1"  >
+                        
+                        
+
+                    
+                
+               <span>主页</span></a>
+           </li>
+     
+           <li>
+                
+                    
+                    
+                        
+                            
+                            
+                        <a href="/meol/custom.do?menuId=2"  >
+                        
+                        
+
+                    
+                
+               <span>学习</span></a>
+           </li>
+     
+           <li>
+                
+                    
+                    
+                        
+                            
+                            
+                        <a href="/meol/custom.do?menuId=3"  >
+                        
+                        
+
+                    
+                
+               <span>活动</span></a>
+           </li>
+     
+           <li>
+                
+                    
+                    
+                        
+                            
+                            
+                        <a href="/meol/custom.do?menuId=4"  >
+                        
+                        
+
+                    
+                
+               <span>播客</span></a>
+           </li>
+     
+           <li>
+                
+                    
+                    
+                        
+                            
+                            
+                        <a href="/meol/custom.do?menuId=5"  >
+                        
+                        
+
+                    
+                
+               <span>精品课</span></a>
+           </li>
+     
+           <li>
+                
+                    
+                         <a href="http://jxpt.ahu.edu.cn/meol/respush/res/res_sso.jsp?resourceIndex=1" target='_blank' >
+                    
+                    
+                
+               <span>资源中心</span></a>
+           </li>
+     
+           <li>
+                
+                    
+                    
+                        
+                            
+                            
+                        <a href="/meol/courseunion/index.jsp?menuId=8"  target='_blank'>
+                        
+                        
+
+                    
+                
+               <span>课程联盟</span></a>
+           </li>
+     
+           <li>
+                
+                    
+                    
+                        
+                            
+                            
+                        <a href="/meol/personal.do?menuId=0"  >
+                        
+                        
+
+                    
+                
+               <span>个人</span></a>
+           </li>
+     
+           <li>
+                
+                    
+                    
+                        
+                            
+                            
+                        <a href="social/socialIndex.do?menuId=9"  target='_blank'>
+                        
+                        
+
+                    
+                
+               <span>学习社区</span></a>
+           </li>
+     
+           <li>
+                
+                    
+                         <a href="http://jxpt.ahu.edu.cn/zlgc/index.do" target='_blank' >
+                    
+                    
+                
+               <span>本科教学工程</span></a>
+           </li>
+     
+    </ul>
+
+
+            </div>
+            
+            <div class="login">
+
+<script type="text/javascript" src="/meol/styles/newstyle/plugins/jquery.md5.js"></script>
+<script language="JavaScript" type="text/JavaScript">
+    function checkLogin(){
+        var name=document.getElementById("userName");
+        var pass=document.getElementById("passWord");
+        var formobj=document.getElementById("form1");
+        if(name.value == ""){
+            name.focus();
+            alert("用户名不能为空！");
+            return false;
+        }else if(pass.value == ""){
+            pass.focus();
+            alert("密码不能为空！");
+            return false;
+        }else{
+            
+            return true;
+        }
+
+    }
+
+</script>
+
+
+
+
+<div class="logout" onclick="location='/meol/homepage/V8/include/logout.jsp'">
+</div>
+
+<div class="loginwrap" style="height: auto;">
+    
+    <div class="login-success">
+        
+        <div id="teaimg">
+            <div class="teaimgwrap personalImgShow"><img width="34" height="34"src='http://jxpt.ahu.edu.cn/meol/lifelong/social/styles/image/default_person.jpg'></div>
+
+        </div>
+        <div class="login-text">
+            
+            <span>钱坤</span>
+            
+        </div>
+
+        <div class="login-button loigned_button" >
+           <div>
+               <input type="button" title="进 入" value="" style="margin: 0"  onclick="location.href='/meol/personal.do?menuId=0'" class="loginbut" />
+           </div>
+            &nbsp;
+            &nbsp;
+            <div>
+                <input type="button" title="退 出" value="" style="margin: 0" onclick="location.href='/meol/homepage/V8/include/logout.jsp'" class="logoutbut" />
+            </div>
+        </div>
+
+
+        <script type="text/javascript">
+            $(function(){
+                $(".login_button").html($("#teaimg").html()).addClass("logined");
+                $(".loginwrap").addClass("loginsuccess");
+                var loginwrap=$(".loginwrap");
+                $(".teaimgwrap").click(function(){
+                    if(loginwrap.css('display')=='block'&&!loginwrap.is(':animated')){
+                        loginwrap.slideUp(400);
+                    }else if(loginwrap.css('display')=='none'&&!loginwrap.is(':animated')){
+                        loginwrap.slideDown(400);
+                    }
+                });
+            })
+        </script>
+
+    </div>
+    
+</div>
+
+            </div>
+        </div>
+    </div>
+    <div class="colth"></div>
+</div>
+
+
+<div class="sideimg">
+
+
+    
+        <div class="bannerPic ">
+            <div class="blockbody">
+                <ul>
+                    
+                        
+                            <li>
+                                
+                                <div class="pic">
+                                    
+                                        
+                                        
+                                              
+                                                
+                                                
+                                                    <div class="rollTwo"    style="background-image:url(/meol/homepage/V8/style/pic/new4.jpg);" > </div>
+                                                
+                                            
+                                        
+                                    
+                                </div>
+                                 <div class="text">
+                                    <div class="inform">
+                                        
+                                    </div>
+                                 </div>
+                               
+                            </li>
+                        
+                    
+                        
+                            <li>
+                                
+                                <div class="pic">
+                                    
+                                        
+                                        
+                                              
+                                                
+                                                
+                                                    <div class="rollTwo"    data-image="/meol/homepage/V8/style/pic/new5.jpg" > </div>
+                                                
+                                            
+                                        
+                                    
+                                </div>
+                                 <div class="text">
+                                    <div class="inform">
+                                        
+                                    </div>
+                                 </div>
+                               
+                            </li>
+                        
+                    
+                        
+                            <li>
+                                
+                                <div class="pic">
+                                    
+                                        
+                                             <div class="rollTwo"       data-image="/meol/downloadTheolFile.do?id=DFDIDBDGDD"></div>
+                                        
+                                        
+                                    
+                                </div>
+                                 <div class="text">
+                                    <div class="inform">
+                                        
+                                    </div>
+                                 </div>
+                               
+                            </li>
+                        
+                    
+                        
+                            <li>
+                                
+                                <div class="pic">
+                                    
+                                        
+                                             <div class="rollTwo"       data-image="/meol/downloadTheolFile.do?id=DFDIDBDGDE"></div>
+                                        
+                                        
+                                    
+                                </div>
+                                 <div class="text">
+                                    <div class="inform">
+                                        
+                                    </div>
+                                 </div>
+                               
+                            </li>
+                        
+                    
+                        
+                            <li>
+                                
+                                <div class="pic">
+                                    
+                                        
+                                             <div class="rollTwo"       data-image="/meol/downloadTheolFile.do?id=DFDIDBDGDF"></div>
+                                        
+                                        
+                                    
+                                </div>
+                                 <div class="text">
+                                    <div class="inform">
+                                        
+                                    </div>
+                                 </div>
+                               
+                            </li>
+                        
+                    
+                </ul>
+            </div>
+        </div>
+    
+    
+
+
+
+
+</div>
+
+
+<div class="contentWrap contentwarp">
+
+
+
+
+
+<div class="blockPicText picText3">
+    <div class="blockTitle">
+            <div align="center" class="blockTitle-title">
+                <span class="title-span">
+                     <div class="titleImgLeft"></div>
+                     <p class="moduleTitle">推荐课程</p>
+                     <div class="titleImgRight"></div>
+                </span>
+            </div>
+        <p class="underline"></p>
+        
+    </div>
+    <div class="blockbody">
+        <ul>
+            
+            
+                
+                    <li class="li0">
+                        
+                        <div class="pic">
+                            
+                                
+                                
+                                      
+                                        
+                                        
+                                             <img src="/meol/homepage/V8/style/pic/test.jpg" alt="推荐课程" />
+                                        
+                                    
+                                
+                            
+                        </div>
+                        <div class="text">
+                            <h5 class="name">推荐课程</h5>
+                            <div class="arrow"></div>
+                            <div class="content">
+                                
+                            </div>
+                        </div>
+                       
+                    </li>
+
+                    
+                
+            
+                
+                    <li class="li1">
+                        
+                        <div class="pic">
+                            
+                                
+                                
+                                      
+                                        
+                                        
+                                             <img src="/meol/homepage/V8/style/pic/test.jpg" alt="推荐课程" />
+                                        
+                                    
+                                
+                            
+                        </div>
+                        <div class="text">
+                            <h5 class="name">推荐课程</h5>
+                            <div class="arrow"></div>
+                            <div class="content">
+                                
+                            </div>
+                        </div>
+                       
+                    </li>
+
+                    
+                
+            
+                
+                    <li class="li2">
+                        
+                        <div class="pic">
+                            
+                                
+                                
+                                      
+                                        
+                                        
+                                             <img src="/meol/homepage/V8/style/pic/test.jpg" alt="推荐课程" />
+                                        
+                                    
+                                
+                            
+                        </div>
+                        <div class="text">
+                            <h5 class="name">推荐课程</h5>
+                            <div class="arrow"></div>
+                            <div class="content">
+                                
+                            </div>
+                        </div>
+                       
+                    </li>
+
+                    
+                
+            
+                
+                    <li class="li3">
+                        
+                        <div class="pic">
+                            
+                                
+                                
+                                      
+                                        
+                                        
+                                             <img src="/meol/homepage/V8/style/pic/test1.jpg" alt="推荐课程" />
+                                        
+                                    
+                                
+                            
+                        </div>
+                        <div class="text">
+                            <h5 class="name">推荐课程</h5>
+                            <div class="arrow"></div>
+                            <div class="content">
+                                
+                            </div>
+                        </div>
+                       
+                    </li>
+
+                    
+                
+            
+                
+                    <li class="li4">
+                        
+                        <div class="pic">
+                            
+                                
+                                
+                                      
+                                        
+                                        
+                                             <img src="/meol/homepage/V8/style/pic/test.jpg" alt="推荐课程" />
+                                        
+                                    
+                                
+                            
+                        </div>
+                        <div class="text">
+                            <h5 class="name">推荐课程</h5>
+                            <div class="arrow"></div>
+                            <div class="content">
+                                
+                            </div>
+                        </div>
+                       
+                    </li>
+
+                    
+                
+            
+                
+                    <li class="li5">
+                        
+                        <div class="pic">
+                            
+                                
+                                
+                                      
+                                        
+                                        
+                                             <img src="/meol/homepage/V8/style/pic/test.jpg" alt="推荐资源" />
+                                        
+                                    
+                                
+                            
+                        </div>
+                        <div class="text">
+                            <h5 class="name">推荐资源</h5>
+                            <div class="arrow"></div>
+                            <div class="content">
+                                
+                            </div>
+                        </div>
+                       
+                    </li>
+
+                    
+                
+            
+                
+                    <li class="li6">
+                        
+                        <div class="pic">
+                            
+                                
+                                
+                                      
+                                        
+                                        
+                                             <img src="/meol/homepage/V8/style/pic/test.jpg" alt="推荐资源" />
+                                        
+                                    
+                                
+                            
+                        </div>
+                        <div class="text">
+                            <h5 class="name">推荐资源</h5>
+                            <div class="arrow"></div>
+                            <div class="content">
+                                
+                            </div>
+                        </div>
+                       
+                    </li>
+
+                    
+                
+            
+                
+                    <li class="li7">
+                        
+                        <div class="pic">
+                            
+                                
+                                
+                                      
+                                        
+                                        
+                                             <img src="/meol/homepage/V8/style/pic/test.jpg" alt="推荐资源" />
+                                        
+                                    
+                                
+                            
+                        </div>
+                        <div class="text">
+                            <h5 class="name">推荐资源</h5>
+                            <div class="arrow"></div>
+                            <div class="content">
+                                
+                            </div>
+                        </div>
+                       
+                    </li>
+
+                    
+                
+            
+                
+                    <li class="li8">
+                        
+                        <div class="pic">
+                            
+                                
+                                
+                                      
+                                        
+                                        
+                                             <img src="/meol/homepage/V8/style/pic/test1.jpg" alt="推荐资源" />
+                                        
+                                    
+                                
+                            
+                        </div>
+                        <div class="text">
+                            <h5 class="name">推荐资源</h5>
+                            <div class="arrow"></div>
+                            <div class="content">
+                                
+                            </div>
+                        </div>
+                       
+                    </li>
+
+                    
+                
+            
+                
+                    <li class="li9">
+                        
+                        <div class="pic">
+                            
+                                
+                                
+                                      
+                                        
+                                        
+                                             <img src="/meol/homepage/V8/style/pic/test.jpg" alt="推荐资源" />
+                                        
+                                    
+                                
+                            
+                        </div>
+                        <div class="text">
+                            <h5 class="name">推荐资源</h5>
+                            <div class="arrow"></div>
+                            <div class="content">
+                                
+                            </div>
+                        </div>
+                       
+                    </li>
+
+                    
+                
+            
+        </ul>
+    </div>
+</div>
+
+
+
+
+
+<div class="blockModule module4">
+
+
+
+
+
+
+<div class="blockModule-title">
+    <div align="center" class="blockTitle-title">
+        <span class="title-span">
+            
+            <p class="moduleTitle">课程排行</p>
+            
+        </span>
+    </div>
+    <p class="underline"></p>
+</div>
+<ul class="toggleul">
+    <li class="tol-right">
+        <div class="day"></div>
+        <span>课程日访问排行</span>
+        <div class="dayhot-more">
+            <a href="/meol/custom.do?menuId=2" >查看更多&gt;</a>
+        </div>
+    </li>
+    <li>
+        <div class="all"></div>
+        <span>课程总访问排行</span>
+        <div class="dayhot-more">
+            <a href="/meol/custom.do?menuId=2" >查看更多&gt;</a>
+        </div>
+    </li>
+</ul>
+<div class="rankingBody">
+<div class="dayhot togglediv tol-right">
+    <div class="dayhot-ul">
+        <ul>
+            
+            <li>
+                <div class="num"></div>
+                <div class="lesname"><a href="./homepage/course/course_index.jsp?courseId=24660" title="军事理论(一)" target="_blank">军事理论(一)</a></div>
+                <div class="lestea"><div class="teacher"></div><em>郝延军</em></div>
+                <div class="lescount"><div class="see-num"></div><em>4276</em></div>
+
+            </li>
+            
+            <li>
+                <div class="num"></div>
+                <div class="lesname"><a href="./homepage/course/course_index.jsp?courseId=16002" title="模拟电子技术" target="_blank">模拟电子技术</a></div>
+                <div class="lestea"><div class="teacher"></div><em>李国丽</em></div>
+                <div class="lescount"><div class="see-num"></div><em>794</em></div>
+
+            </li>
+            
+            <li>
+                <div class="num"></div>
+                <div class="lesname"><a href="./homepage/course/course_index.jsp?courseId=26481" title="高等数学B（二）" target="_blank">高等数学B（二）</a></div>
+                <div class="lestea"><div class="teacher"></div><em>毛军军</em></div>
+                <div class="lescount"><div class="see-num"></div><em>339</em></div>
+
+            </li>
+            
+            <li>
+                <div class="num"></div>
+                <div class="lesname"><a href="./homepage/course/course_index.jsp?courseId=13857" title="大学物理A（上）" target="_blank">大学物理A（上）</a></div>
+                <div class="lestea"><div class="teacher"></div><em>刘艳美</em></div>
+                <div class="lescount"><div class="see-num"></div><em>217</em></div>
+
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+<div class="totalhot togglediv" style="float:right;">
+    <div class="totalhot-ul">
+        <ul>
+            
+            <li>
+                <div class="num"></div>
+                <div class="lesname"><a href="./homepage/course/course_index.jsp?courseId=24660" title="军事理论(一)" target="_blank">军事理论(一)</a></div>
+                <div class="lestea"><div class="teacher"></div><em>郝延军</em></div>
+                <div class="lescount"><div class="see-num"></div><em>482801</em></div>
+
+            </li>
+            
+            <li>
+                <div class="num"></div>
+                <div class="lesname"><a href="./homepage/course/course_index.jsp?courseId=15191" title="形势与政策" target="_blank">形势与政策</a></div>
+                <div class="lestea"><div class="teacher"></div><em>吴思</em></div>
+                <div class="lescount"><div class="see-num"></div><em>69697</em></div>
+
+            </li>
+            
+            <li>
+                <div class="num"></div>
+                <div class="lesname"><a href="./homepage/course/course_index.jsp?courseId=15301" title="形势与政策" target="_blank">形势与政策</a></div>
+                <div class="lestea"><div class="teacher"></div><em>焦中宁</em></div>
+                <div class="lescount"><div class="see-num"></div><em>66316</em></div>
+
+            </li>
+            
+            <li>
+                <div class="num"></div>
+                <div class="lesname"><a href="./homepage/course/course_index.jsp?courseId=15186" title="形势与政策" target="_blank">形势与政策</a></div>
+                <div class="lestea"><div class="teacher"></div><em>朱晓莉</em></div>
+                <div class="lescount"><div class="see-num"></div><em>66285</em></div>
+
+            </li>
+            
+        </ul>
+    </div>
+
+</div>
+</div>
+
+
+
+
+</div>
+         
+     
+
+
+
+<div class="blockModule module5">
+   
+
+
+
+
+
+<div class="notify-title">
+    <div align="center" class="blockTitle-title">
+        <span class="title-span">
+            <div class="titleImgLeft"></div>
+            <p class="moduleTitle">通知公告</p>
+            <div class="titleImgRight"></div>
+        </span>
+    </div>
+    <p class="underline"></p>
+</div>
+<div class="notifywrap">
+    <div class="notify-ul">
+        <ul>
+            
+            <li class="notify-li0">
+                <div class="notify-body">
+
+                
+                    
+
+                    <div class="notify-body-title">
+                <a href="/meol/common/inform/message_content.jsp?nid=136843" class="infolist" title="网络教学综合平台团队成员添加办法说明"
+                   target="_blank">
+                    网络教学综合平台团队成员添加办法说明
+                </a>
+                    </div>
+                
+
+                <div class="notify-text">
+
+网络教学综合平台团队成员添加办法说明.pdf
+
+</div>
+                
+                <div class="notify-info">
+                    <div class="date"></div>
+                    <div class="time">2020-02-16</div>
+                    <div class="see"></div>
+                    <div class="count">4259</div>
+                </div>
+            </div>
+            </li>
+            
+            <li class="notify-li1">
+                <div class="notify-body">
+
+                
+                    <div class="notify-img"></div>
+                    
+                    
+
+                    <div class="notify-body-title">
+                <a href="/meol/common/inform/message_content.jsp?nid=111330" class="infolist" title="学生用户使用说明（新版）"
+                   target="_blank">
+                    学生用户使用说明（新版）
+                </a>
+                    </div>
+                
+
+                <div class="notify-text">
+
+学生用户使用说明（新版）.pdf
+
+</div>
+                
+                <div class="notify-info">
+                    <div class="date"></div>
+                    <div class="time">2019-05-06</div>
+                    <div class="see"></div>
+                    <div class="count">6170</div>
+                </div>
+            </div>
+            </li>
+            
+            <li class="notify-li2">
+                <div class="notify-body">
+
+                
+                    
+
+                    <div class="notify-body-title">
+                <a href="/meol/common/inform/message_content.jsp?nid=111329" class="infolist" title="教师用户使用说明（新版）"
+                   target="_blank">
+                    教师用户使用说明（新版）
+                </a>
+                    </div>
+                
+
+                <div class="notify-text">
+
+
+
+
+
+
+教师用户使用说明（新版）.pdf
+
+
+</div>
+                
+                <div class="notify-info">
+                    <div class="date"></div>
+                    <div class="time">2019-05-06</div>
+                    <div class="see"></div>
+                    <div class="count">3029</div>
+                </div>
+            </div>
+            </li>
+            
+            <li class="notify-li3">
+                <div class="notify-body">
+
+                
+                    <div class="notify-img"></div>
+                    
+                    
+
+                    <div class="notify-body-title">
+                <a href="/meol/common/inform/message_content.jsp?nid=102645" class="infolist" title="安徽大学网络教学综合平台教师简明操作手册（8.0版本）"
+                   target="_blank">
+                    安徽大学网络教学综合平台教师简明操作手册...
+                </a>
+                    </div>
+                
+
+                <div class="notify-text">
+
+教师简明操作手册8.0--安徽大学.pdf
+
+
+</div>
+                
+                <div class="notify-info">
+                    <div class="date"></div>
+                    <div class="time">2018-11-22</div>
+                    <div class="see"></div>
+                    <div class="count">3497</div>
+                </div>
+            </div>
+            </li>
+            
+        </ul>
+    </div>
+
+    
+</div>
+<div class="notify-more">
+    <a href="/meol/homepage/common/inform_all.jsp" target="_blank">查看更多</a>
+</div>
+
+    
+        
+            
+</div>
+         
+<div class="blockModule module8">
+
+
+
+
+
+
+<div class="depwrap">
+    <div class="dep-title">
+        <div align="center" class="blockTitle-title">
+            <span class="title-span">
+                    <div class="titleImgLeft"></div>
+                     <p class="moduleTitle">开课院系</p>
+                     <div class="titleImgRight"></div>
+            </span>
+        </div>
+        <p class="underline"></p>
+    </div>
+    <div class="dep-ul" id="deplist">
+        <ul>
+
+            
+            <li>
+                <a href="./department.do?deptId=10592" title="宣传部（新闻中心）">
+                    <span>宣传部（新闻中心）</span>
+                </a>
+            </li>
+            
+            <li>
+                <a href="./department.do?deptId=10591" title="纪检监察室">
+                    <span>纪检监察室</span>
+                </a>
+            </li>
+            
+            <li>
+                <a href="./department.do?deptId=10590" title="机关党委">
+                    <span>机关党委</span>
+                </a>
+            </li>
+            
+            <li>
+                <a href="./department.do?deptId=10480" title="国际合作与交流处">
+                    <span>国际合作与交流处</span>
+                </a>
+            </li>
+            
+            <li>
+                <a href="./department.do?deptId=10589" title="学生处（党委学生工作部）">
+                    <span>学生处（党委学生工作部）</span>
+                </a>
+            </li>
+            
+            <li>
+                <a href="./department.do?deptId=10593" title="保卫处（党委保卫部）">
+                    <span>保卫处（党委保卫部）</span>
+                </a>
+            </li>
+            
+            <li>
+                <a href="./department.do?deptId=10588" title="研究生院（党委研究生工作部）">
+                    <span>研究生院（党委研究生工作部）</span>
+                </a>
+            </li>
+            
+            <li>
+                <a href="./department.do?deptId=10587" title="国有资产与实验设备处">
+                    <span>国有资产与实验设备处</span>
+                </a>
+            </li>
+            
+            <li>
+                <a href="./department.do?deptId=10586" title="采购管理中心">
+                    <span>采购管理中心</span>
+                </a>
+            </li>
+            
+            <li>
+                <a href="./department.do?deptId=10585" title="人文社会科学处">
+                    <span>人文社会科学处</span>
+                </a>
+            </li>
+            
+            <li>
+                <a href="./department.do?deptId=10080" title="数学科学学院">
+                    <span>数学科学学院</span>
+                </a>
+            </li>
+            
+            <li>
+                <a href="./department.do?deptId=10081" title="物理与材料科学学院">
+                    <span>物理与材料科学学院</span>
+                </a>
+            </li>
+            
+            <li>
+                <a href="./department.do?deptId=10082" title="化学化工学院">
+                    <span>化学化工学院</span>
+                </a>
+            </li>
+            
+            <li>
+                <a href="./department.do?deptId=10083" title="生命科学学院">
+                    <span>生命科学学院</span>
+                </a>
+            </li>
+            
+            <li>
+                <a href="./department.do?deptId=10084" title="电子信息工程学院">
+                    <span>电子信息工程学院</span>
+                </a>
+            </li>
+            
+            <li>
+                <a href="./department.do?deptId=10085" title="计算机科学与技术学院">
+                    <span>计算机科学与技术学院</span>
+                </a>
+            </li>
+            
+            <li>
+                <a href="./department.do?deptId=10260" title="电气工程与自动化学院">
+                    <span>电气工程与自动化学院</span>
+                </a>
+            </li>
+            
+            <li>
+                <a href="./department.do?deptId=10261" title="资源与环境工程学院">
+                    <span>资源与环境工程学院</span>
+                </a>
+            </li>
+            
+            <li>
+                <a href="./department.do?deptId=10481" title="互联网学院">
+                    <span>互联网学院</span>
+                </a>
+            </li>
+            
+            <li>
+                <a href="./department.do?deptId=10086" title="文学院">
+                    <span>文学院</span>
+                </a>
+            </li>
+            
+            <li>
+                <a href="./department.do?deptId=10087" title="历史系">
+                    <span>历史系</span>
+                </a>
+            </li>
+            
+            <li>
+                <a href="./department.do?deptId=10088" title="哲学系">
+                    <span>哲学系</span>
+                </a>
+            </li>
+            
+            <li>
+                <a href="./department.do?deptId=10089" title="新闻传播学院">
+                    <span>新闻传播学院</span>
+                </a>
+            </li>
+            
+            <li>
+                <a href="./department.do?deptId=10090" title="外语学院">
+                    <span>外语学院</span>
+                </a>
+            </li>
+            
+            <li>
+                <a href="./department.do?deptId=10091" title="商学院">
+                    <span>商学院</span>
+                </a>
+            </li>
+            
+            <li>
+                <a href="./department.do?deptId=10092" title="经济学院">
+                    <span>经济学院</span>
+                </a>
+            </li>
+            
+            <li>
+                <a href="./department.do?deptId=10093" title="艺术学院">
+                    <span>艺术学院</span>
+                </a>
+            </li>
+            
+            <li>
+                <a href="./department.do?deptId=10094" title="法学院">
+                    <span>法学院</span>
+                </a>
+            </li>
+            
+            <li>
+                <a href="./department.do?deptId=10095" title="社会与政治学院">
+                    <span>社会与政治学院</span>
+                </a>
+            </li>
+            
+            <li>
+                <a href="./department.do?deptId=10096" title="管理学院">
+                    <span>管理学院</span>
+                </a>
+            </li>
+            
+            <li>
+                <a href="./department.do?deptId=10124" title="国际商学院">
+                    <span>国际商学院</span>
+                </a>
+            </li>
+            
+            <li>
+                <a href="./department.do?deptId=10523" title="马克思主义学院">
+                    <span>马克思主义学院</span>
+                </a>
+            </li>
+            
+            <li>
+                <a href="./department.do?deptId=10097" title="思想政治理论课教学部">
+                    <span>思想政治理论课教学部</span>
+                </a>
+            </li>
+            
+            <li>
+                <a href="./department.do?deptId=10420" title="大学英语教学部">
+                    <span>大学英语教学部</span>
+                </a>
+            </li>
+            
+            <li>
+                <a href="./department.do?deptId=10099" title="大学外语教学部">
+                    <span>大学外语教学部</span>
+                </a>
+            </li>
+            
+            <li>
+                <a href="./department.do?deptId=10520" title="大学外语教学中心">
+                    <span>大学外语教学中心</span>
+                </a>
+            </li>
+            
+            <li>
+                <a href="./department.do?deptId=10522" title="大学计算机教学中心">
+                    <span>大学计算机教学中心</span>
+                </a>
+            </li>
+            
+            <li>
+                <a href="./department.do?deptId=10100" title="大学计算机教学部">
+                    <span>大学计算机教学部</span>
+                </a>
+            </li>
+            
+            <li>
+                <a href="./department.do?deptId=10102" title="体育军事教学部">
+                    <span>体育军事教学部</span>
+                </a>
+            </li>
+            
+            <li>
+                <a href="./department.do?deptId=10322" title="文典学院">
+                    <span>文典学院</span>
+                </a>
+            </li>
+            
+            <li>
+                <a href="./department.do?deptId=10584" title="档案馆">
+                    <span>档案馆</span>
+                </a>
+            </li>
+            
+            <li>
+                <a href="./department.do?deptId=10583" title="网络信息中心">
+                    <span>网络信息中心</span>
+                </a>
+            </li>
+            
+            <li>
+                <a href="./department.do?deptId=10521" title="物质科学与信息技术研究院">
+                    <span>物质科学与信息技术研究院</span>
+                </a>
+            </li>
+            
+            <li>
+                <a href="./department.do?deptId=10582" title="发展规划处">
+                    <span>发展规划处</span>
+                </a>
+            </li>
+            
+            <li>
+                <a href="./department.do?deptId=10320" title="外国语言文化教育中心">
+                    <span>外国语言文化教育中心</span>
+                </a>
+            </li>
+            
+            <li>
+                <a href="./department.do?deptId=10581" title="审计处">
+                    <span>审计处</span>
+                </a>
+            </li>
+            
+            <li>
+                <a href="./department.do?deptId=10340" title="附属学校">
+                    <span>附属学校</span>
+                </a>
+            </li>
+            
+            <li>
+                <a href="./department.do?deptId=10422" title="健康研究院">
+                    <span>健康研究院</span>
+                </a>
+            </li>
+            
+            <li>
+                <a href="./department.do?deptId=10580" title="校友工作办公室">
+                    <span>校友工作办公室</span>
+                </a>
+            </li>
+            
+            <li>
+                <a href="./department.do?deptId=10421" title="停薪人员">
+                    <span>停薪人员</span>
+                </a>
+            </li>
+            
+            <li>
+                <a href="./department.do?deptId=10461" title="互联网学院">
+                    <span>互联网学院</span>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="notify-more">
+        <a href="###" >查看更多</a>
+    </div>
+</div>
+
+</div>
+         
+     
+
+
+
+
+
+</div>
+<div class="foot">
+    <div class="wraper">
+        <div class="copyright">
+
+            <ul>
+                <li>
+                    <a>
+                        <span class="fw"></span>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        
+
+                        <span class="explain">总访问量：33906767</span>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <span class="zkc"></span>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        
+                        <span class="explain">总课程数：17096</span>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <span class="zx"></span>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <span class="explain">在线人数：158</span>
+                    </a>
+                </li>
+                
+            </ul>
+            <p><a href=http://www.ahu.edu.cn target=_blank> 安徽大学</a> 版权所有 2017 <a href=http://www.umooc.com.cn target=_blank> 优慕课在线教育科技（北京）有限责任公司</a> 技术支持（请使用1280*1024分辨率，IE8或更高版本浏览器访问本系统）</p>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $(function(){
+        var lochref = window.location.href.split("?")[1];
+        if(lochref != undefined && lochref != ""){
+               $(".head .nav a").each(function(){
+                   var _href = $(this).attr("href");
+                   if(_href.indexOf("?") >0){
+                       var thref = _href.split("?")[1];
+                       if(thref==lochref){
+                           $(this).parent("li").addClass('js-cur');
+                       }
+                   }
+               });
+               }else{
+                   $(".head .nav li").eq(0).addClass("js-cur");
+               }
+
+//        点击搜索的时候提示
+//            if( $('.into').text() == '登录'){
+//            $('input.prompt').click(function(){
+//                alert('请您先登录!');
+//            })
+//            }
+    })
+</script>
+<script type="text/javascript">
+    $(function(){
+        setViewHeight(".contentwarp",".head",".sideimg",".foot");
+      //  setCurNavClass();
+    })
+    //app下载跳转页面
+    $(".appDownload").click(function(){
+        window.open("homepage/V8/include/appDownload.jsp");
+    })
+</script>
+</body>
+</html>
+
+
