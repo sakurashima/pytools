@@ -22,3 +22,6 @@ params = {
 response = requests.get(url, headers=headers)
 
 print(response.status_code)
+
+with open('repos.txt', 'w', encoding='utf-8') as f:
+    f.write(response.text)
